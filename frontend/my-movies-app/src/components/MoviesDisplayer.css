@@ -1,0 +1,13 @@
+.MoviesCont{
+    height: 100vh;
+    margin: 15vh 3vw 0  18vw;
+    width: 85vw;
+    
+}
+@media only screen and (max-width: 860px) {
+    .MoviesCont{
+       margin: 5px;
+       width: 100%;
+       
+    }
+}

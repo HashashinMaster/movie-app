@@ -1,0 +1,13 @@
+.ShowMoreMovies{
+    display: block;
+    color:white;
+    background-color: #ff3d4a;
+    border: 0;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.btnShowContainer{
+    padding: 15px 0px;
+}

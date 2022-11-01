@@ -1,0 +1,18 @@
+.searchImg{
+    width: 40px;
+    height: 100%;
+}
+.SearchCardContainer{
+    display: flex;
+    height: 60px;
+    gap: 10px;
+    transition: 0.23s;
+    cursor: pointer;
+}
+.SearchCardContainer:hover{
+    background-color: #191c1f;
+    border: 1px solid #495156;
+}
+.searchCat {
+    color:#526876;
+}

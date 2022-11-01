@@ -1,0 +1,146 @@
+.Card{
+    position: relative;
+    width: 220px;
+    height: 300px;
+    margin-bottom: 9%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 9px  black ;
+    cursor: pointer;
+    transition: 0.23s;
+}
+.Card:hover .Play{
+    height: 100%;
+    
+}
+.Card:hover .fa-circle-play{
+    display: block;
+    
+}
+.Card:hover .rating{
+    background-color:#ff3d4a;
+    
+}
+.Card:hover .description{
+    display: block;
+}
+.Play{
+    transition: 0.23s;
+    overflow: hidden;
+    background-color: rgba(255, 61, 74,0.7) ;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0%;
+    right: 0;
+    top: 0;
+}
+.fa-circle-play{
+    transform: scale(3);
+    display: none;
+    
+    
+}
+.cardImg{
+    width: 100%;
+    height: 100%;
+}
+.CardsInfo{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.category{
+    color:#526876;
+}
+.rating,.ratingdes{
+    position: absolute;
+    z-index: 1;
+    transition: 0.23s;
+    top:-15px;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: #ffaf08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    height: 30px;
+    text-align: center;
+   
+    border-radius: 20px;
+}
+
+.ratingdes{
+    top:15px;
+    margin-right: 5px;
+    width: 15%;
+}
+.descriptionPara{
+    color: black;
+}
+
+.description{
+    display: none;
+    z-index: 2;
+    background-color: white;
+    width: 200%;
+    height: 100%;
+    position: absolute;   
+    top:0;
+}
+.goRight{
+    
+    right: -210%;  
+}
+.goLeft{
+    left: -210%;
+}
+.des{
+    color: black;
+}
+.desc{
+    background-color:white ;
+    margin: 5px;
+    color: black;
+    
+}
+.fa-caret-left,.fa-caret-right{
+    position: absolute;
+    top:60px;
+    color: white;
+    transform: scale(1.5);
+}
+.goRight .fa-caret-left{   
+    left: -25px;   
+   
+}
+.goLeft .fa-caret-right{
+    right: -25px; 
+     
+}
+.Watch{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color:#ff3d4a;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 0px;
+    cursor: pointer;
+    margin-top: auto;
+}
+@media only screen and (max-width: 1080px) {
+        .description{
+            display: none;
+        }
+        .Card:hover .description{
+            display: none;
+        }
+}

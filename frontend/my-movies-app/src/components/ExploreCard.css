@@ -1,0 +1,25 @@
+.Catsbtn{
+    color: white;
+    background-color: #ff3d4a; 
+    border: 0;
+    padding: 5px;
+    border-radius: 3px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.Catsbtn:hover .circle{
+ background-color: #ffaf08;
+ /* #526876 */
+
+}
+.circle{
+    transition: 0.13s;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
